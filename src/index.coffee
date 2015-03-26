@@ -19,7 +19,7 @@ module.exports = class JadeReactCompiler
 
     unless exclude
       try
-        data = jade.compileFileClient(params.data, {globalReact: true})
+        data = jade.compileClient(params.data, {globalReact: true})
 
         result =
           data: data
