@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "anymatch": "^1.0.0",
-    "jade-react-compiler": "0.2.2"
+    "react": "^0.13.1",
+    "react-jade": "^2.4.0"
   },
   "devDependencies": {
     "mocha": "1.11.0",

@@ -1,4 +1,4 @@
-jadeReactCompiler = require 'jade-react-compiler'
+jade = require('react-jade')
 anymatch = require 'anymatch'
 
 
@@ -19,7 +19,7 @@ module.exports = class JadeReactCompiler
 
     unless exclude
       try
-        data = jadeReactCompiler.compileClient(params.data)
+        data = jade.compileFileClient(params.data, {globalReact: true})
 
         result =
           data: data
